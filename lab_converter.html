@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frequency to Time Period Converter</title>
+    <style>
+        body{
+            background-color: #c1c1c1;
+            text-align: center
+        }
+
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><marquee>PR Frequency to Time Period Converter</marquee> </h2>
+
+    <input type="number" id="ggg"></input>
+    <button onclick="ddd()">Done</button>
+    <p><span id='display'></span></p>
+
+    <!-- <img src="logo.png" width="15%" > -->
+    <br>
+
+    <script>
+
+        function ddd() {
+            
+            let frequency = document.getElementById("ggg").value;
+            if (frequency != null) {
+                
+                let timePeriod = (1/frequency)*1000;
+                document.write(`<h2>The Time Period of ${frequency}Hz is ${timePeriod}ms</h2><br>`)
+
+                let valueOne = timePeriod/4;
+                document.write(`<h2>Your first value in graph is ${valueOne}ms</h2><br>`)
+
+                let valueTwo = valueOne*2;
+                document.write(`<h2>Your second value in graph is ${valueTwo}ms</h2><br>`)
+
+                let valueThree = valueOne*3;
+                document.write(`<h2>Your third value in graph is ${valueThree}ms</h2><br>`)
+
+                document.write(`<h2>Your fourth value in graph is ${timePeriod}ms</h2><br>`)
+
+                let valueFive = valueOne*5;
+                document.write(`<h2>Your fifth value in graph is ${valueFive}ms</h2><br>`)
+
+                let valueSix = valueOne*6;
+                document.innerHTML(`<h2>Your sixth value in graph is ${valueSix}ms</h2><br>`)
+
+                let valueSeven = valueOne*7;
+                document.write(`<h2>Your seventh value in graph is ${valueSeven}ms</h2><br>`)
+
+                let valueEight = valueOne*8;
+                document.write(`<h2>Your eighth value in graph is ${valueEight}ms</h2><br>`)
+            }
+
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
